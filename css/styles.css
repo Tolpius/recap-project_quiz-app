@@ -60,7 +60,7 @@ body {
   border-width: 1px;
 }
 
-.quiz-container {
+.container_quiz {
   width: 100%;
   max-width: 600px;
   padding: 20px;
@@ -73,4 +73,21 @@ body {
   margin-bottom: 5px;
 }
 
+.container_answer-buttons ul
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
 
+.question {
+ text-align: center;
+}
+
+.container_answer {
+  text-align: center
+}
+.answer {
+  margin: 1rem;
+}

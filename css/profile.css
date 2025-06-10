@@ -51,12 +51,12 @@
   border-width: 1px;
 }
 .ul_profile_question_overwiew {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
 }
 .ul_profile_question_overwiew li {
-    border-radius: 8px;
+  border-radius: 8px;
   border-color: black;
   border-style: solid;
   border-width: 1px;
