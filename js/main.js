@@ -5,6 +5,7 @@ const appContainer = document.querySelector("[data-js='container_app']");
 
 appContainer.addEventListener("click", (event) => {
   //console.log({ event });
+  //***SHOW ANSWER BUTTON***
   if (event.target.matches("[data-js='btn_show_answer']")) {
     const button = event.target;
     const answer = button.previousElementSibling;
@@ -13,14 +14,14 @@ appContainer.addEventListener("click", (event) => {
       ? "Show Answer"
       : "Hide Answer";
   }
+  //***BOOKMARK SELECTED QUESTION***
   else if (event.target.matches("[data-js='btn_bookmark_quiz']")) {
     event.target.classList.toggle("ph-fill");
     event.target.classList.toggle("ph");
   }
-  else if (event.target.matches('[data-js="toggle_darkMode"]'))
-  {console.log("Toggle DarkMode Klicked!")}
 });
 
+//***NEUE QUESTION FORM***
 newForm.addEventListener("submit", (event) => {
   //console.log({ event });
   event.preventDefault();
@@ -56,6 +57,7 @@ newForm.addEventListener("submit", (event) => {
   );
 });
 
+//Input Field Char Counter
 newForm.addEventListener("input", (event) => {
   const input = event.target;
   if (event.target.matches(".input_big")) {
