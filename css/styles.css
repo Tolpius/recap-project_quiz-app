@@ -1,6 +1,7 @@
 @import url("footer.css");
 @import url("profile.css");
 @import url("slider.css");
+@import url("newQuestions.css");
 * {
   box-sizing: border-box;
 }
@@ -87,55 +88,6 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.container_new_question {
-  width: 100%;
-  max-width: 600px;
-  padding: 20px;
-  background-color: #f0f0f0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
-  margin-bottom: 5px;
-}
-
-.form_new_question {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.btn_add_question {
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.input_big {
-  max-width: 100%;
-  min-width: 100%;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.container_new_tag {
-display:grid ;
-grid-template-columns: auto 1fr auto auto;
-gap: 10px;
-
-}
-.container_tags ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
 }
 
 .question {
