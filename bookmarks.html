@@ -21,26 +21,33 @@
   <body>
     <header><h1>Bookmarks</h1></header>
     <div class="container" id="container_app">
-       <div id="q1" class="container_quiz">
-        <button><i class="ph-fill ph-bookmark"></i></button>
+      <div id="q1" class="container_quiz">
+        <button data-js="btn_bookmark_quiz">
+          <i class="ph-fill ph-bookmark"></i>
+        </button>
         <div class="container_question">
           <h3 class="question">
             Wie viele Mitglieder hatte die Gefährten-Gruppe am Anfang?
           </h3>
         </div>
         <div class="container_answer">
-          <button class="btn_show-answer">Show Answer</button>
+          <div class="answer hidden">Neun</div>
+          <button class="btn_show-answer" data-js="btn_show_answer">
+            Show Answer
+          </button>
         </div>
-        <div class="container_answer-buttons">
+        <div class="container_tags">
           <ul>
-            <li><button class="btn_answer" id="answer1">#Buch</button></li>
-            <li><button class="btn_answer" id="answer2">#Film</button></li>
+            <li><p class="tag" id="tag_1">#Buch</p></li>
+            <li><p class="tag" id="tag_2">#Film</p></li>
           </ul>
         </div>
       </div>
 
       <div id="q2" class="container_quiz">
-        <button><i class="ph-fill ph-bookmark"></i></button>
+        <button data-js="btn_bookmark_quiz">
+          <i class="ph-fill ph-bookmark"></i>
+        </button>
         <div class="container_question">
           <h3 class="question">
             Welche Figur war ursprünglich für Galadriels Rolle im Film
@@ -49,44 +56,55 @@
         </div>
         <div class="container_answer">
           <div class="answer">Uma Thurman</div>
-          <button class="btn_show-answer">Hide Answer</button>
+          <button class="btn_show-answer" data-js="btn_show_answer">
+            Hide Answer
+          </button>
         </div>
-        <div class="container_answer-buttons">
+        <div class="container_tags">
           <ul>
-            <li><button class="btn_answer" id="answer1">#Film</button></li>
-            <li><button class="btn_answer" id="answer2">#Casting</button></li>
+            <li><p class="tag">#Film</p></li>
+            <li><p class="tag">#Casting</p></li>
           </ul>
         </div>
       </div>
 
       <div id="q1" class="container_quiz">
-        <button><i class="ph-fill ph-bookmark"></i></button>
+        <button data-js="btn_bookmark_quiz">
+          <i class="ph-fill ph-bookmark"></i>
+        </button>
         <div class="container_question">
           <h3 class="question">Wie hieß Gollum, bevor er den Ring fand?</h3>
         </div>
         <div class="container_answer">
-          <button class="btn_show-answer">Show Answer</button>
+          <div class="answer hidden">Sméagol</div>
+          <button class="btn_show-answer" data-js="btn_show_answer">
+            Show Answer
+          </button>
         </div>
-        <div class="container_answer-buttons">
+        <div class="container_tags">
           <ul>
-            <li><button class="btn_answer" id="answer1">#Buch</button></li>
-            <li><button class="btn_answer" id="answer2">#Film</button></li>
-            <li><button class="btn_answer" id="answer3">#Lore</button></li>
+            <li><p class="tag">#Buch</p></li>
+            <li><p class="tag">#Film</p></li>
+            <li><p class="tag">#Lore</p></li>
           </ul>
         </div>
       </div>
     </div>
-
     <footer>
       <ul>
         <li>
-          <a aria-label="home" href="index.html"><i class="ph ph-house"></i></a>
+          <a aria-label="home" href="quiz.html"><i class="ph ph-house"></i></a>
         </li>
         <li>
           <a aria-label="Bookmarks"><i class="ph-fill ph-bookmark"></i></a>
         </li>
         <li>
-          <a class="fa-solid fa-user" aria-label="Profile" href="profile.html"
+          <a aria-label="New Questions" href="newQuestions.html"
+            ><i class="ph ph-plus-circle"></i
+          ></a>
+        </li>
+        <li>
+          <a aria-label="Profile" href="profile.html"
             ><i class="ph ph-user"></i
           ></a>
         </li>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/main.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+  </head>
+
+  <body>
+    <header><h1>Quiz App</h1></header>
+    <div class="container" id="container_app">
+      <div id="q1" class="container_quiz">
+        <button data-js="btn_bookmark_quiz">
+          <i class="ph-fill ph-bookmark"></i>
+        </button>
+        <div class="container_question">
+          <h3 class="question">
+            Wie viele Mitglieder hatte die Gefährten-Gruppe am Anfang?
+          </h3>
+        </div>
+        <div class="container_answer">
+          <div class="answer hidden">Neun</div>
+          <button class="btn_show-answer" data-js="btn_show_answer">
+            Show Answer
+          </button>
+        </div>
+        <div class="container_tags">
+          <ul>
+            <li><p class="tag" id="tag_1">#Buch</p></li>
+            <li><p class="tag" id="tag_2">#Film</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="q2" class="container_quiz">
+        <button data-js="btn_bookmark_quiz">
+          <i class="ph-fill ph-bookmark"></i>
+        </button>
+        <div class="container_question">
+          <h3 class="question">
+            Welche Figur war ursprünglich für Galadriels Rolle im Film
+            vorgesehen?
+          </h3>
+        </div>
+        <div class="container_answer">
+          <div class="answer">Uma Thurman</div>
+          <button class="btn_show-answer" data-js="btn_show_answer">
+            Hide Answer
+          </button>
+        </div>
+        <div class="container_tags">
+          <ul>
+            <li><p class="tag" id="tag_1">#Film</p></li>
+            <li><p class="tag" id="tag_2">#Casting</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="q1" class="container_quiz">
+        <button data-js="btn_bookmark_quiz">
+          <i class="ph-fill ph-bookmark"></i>
+        </button>
+        <div class="container_question">
+          <h3 class="question">Wie hieß Gollum, bevor er den Ring fand?</h3>
+        </div>
+        <div class="container_answer">
+          <div class="answer hidden">Sméagol</div>
+          <button class="btn_show-answer" data-js="btn_show_answer">
+            Show Answer
+          </button>
+        </div>
+        <div class="container_tags">
+          <ul>
+            <li><p class="tag" id="tag_1">#Buch</p></li>
+            <li><p class="tag" id="tag_2">#Film</p></li>
+            <li><p class="tag" id="tag_3">#Lore</p></li>
+          </ul>
+        </div>
+      </div>
+      <div id="q1" class="container_quiz">
+        <button data-js="btn_bookmark_quiz">
+          <i class="ph ph-bookmark"></i>
+        </button>
+        <div class="container_question">
+          <h3 class="question">Wer zerstört den Einen Ring letztendlich?</h3>
+        </div>
+        <div class="container_answer">
+          <div class="answer">Gollum</div>
+          <button class="btn_show-answer" data-js="btn_show_answer">
+            Hide Answer
+          </button>
+        </div>
+        <div class="container_tags">
+          <ul>
+            <li><p class="tag" id="tag_1">#Buch</p></li>
+            <li><p class="tag" id="tag_2">#Film</p></li>
+          </ul>
+        </div>
+      </div>
+      <div id="q1" class="container_quiz">
+        <button data-js="btn_bookmark_quiz">
+          <i class="ph ph-bookmark"></i>
+        </button>
+        <div class="container_question">
+          <h3 class="question">Was bedeutet „Mithril“?</h3>
+        </div>
+        <div class="container_answer">
+          <div class="answer">Wahres Silber</div>
+          <button class="btn_show-answer" data-js="btn_show_answer">
+            Hide Answer
+          </button>
+        </div>
+        <div class="container_tags">
+          <ul>
+            <li><p class="tag" id="tag_1">#Buch</p></li>
+            <li><p class="tag" id="tag_2">#Lore</p></li>
+          </ul>
+        </div>
+      </div>
+      <div id="q1" class="container_quiz">
+        <button data-js="btn_bookmark_quiz">
+          <i class="ph ph-bookmark"></i>
+        </button>
+        <div class="container_question">
+          <h3 class="question">
+            Wer hat den Sound des Nazgûl-Schreis gemacht?
+          </h3>
+        </div>
+        <div class="container_answer">
+          <div class="answer">Fran Walsh, die Frau von Peter Jackson</div>
+          <button class="btn_show-answer" data-js="btn_show_answer">
+            Hide Answer
+          </button>
+        </div>
+        <div class="container_tags">
+          <ul>
+            <li><p class="tag" id="tag_1">#Film</p></li>
+            <li><p class="tag" id="tag_2">#Fun Fact</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <ul>
+        <li>
+          <a aria-label="home" class="btn_footer"
+            ><i class="ph-fill ph-house"></i
+          ></a>
+        </li>
+        <li>
+          <a aria-label="Bookmarks" href="bookmarks.html"
+            ><i class="ph ph-bookmark"></i
+          ></a>
+        </li>
+        <li>
+          <a aria-label="New Questions" href="newQuestions.html"
+            ><i class="ph ph-plus-circle"></i
+          ></a>
+        </li>
+        <li>
+          <a aria-label="Profile" href="profile.html"
+            ><i class="ph ph-user"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
